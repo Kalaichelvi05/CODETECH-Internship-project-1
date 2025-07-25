@@ -1,0 +1,135 @@
+*html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    height: 100vh;
+    background:url("https://img.freepik.com/free-vector/gradient-background-with-bokeh-effect_23-2148365959.jpg") no-repeat center / cover;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body {
+    background:url("https://img.freepik.com/free-vector/gradient-background-with-bokeh-effect_23-2148365959.jpg") no-repeat center / cover;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  /* Nav bar styles */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: blue;
+  font-weight:lighter;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  color:rgb(114, 111, 111)
+}
+   
+
+  * {
+  box-sizing: border-box; /* Ensures padding and border are inside width :contentReference[oaicite:2]{index=2} */
+}
+.cert-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.cert-box {
+  position: relative;
+  flex: 0 0 calc(33.333% - 1.5rem); /* 5 boxes across; adjust percentage */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.cert-box {
+  position: relative;
+  overflow: hidden;
+  background-color: darkorchid;
+  border: 2px solid rosybrown;
+  border-radius: 2px;
+  padding: 1rem;
+  text-align: center;
+  transition: background-color 0.8s ease;
+  cursor: pointer;
+}
+
+.cert-box img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom & background change when "active" */
+.cert-box.active {
+  background-color: #0e77d3;
+  z-index: 10;
+}
+.cert-box.active img {
+  transform: scale(1.2);
+}
+
+.cert-box:hover{
+    background-color: #bb085c;
+    color: white;
+}
+
+.cert-box img {
+  width: 100px; /* fixed small image size */
+  height: auto;
+  max-height: 250px; /* limits image height */
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+  border: 1px solid lab(58.63% 63.95 -40.98);
+  border-radius: 4px;
+}
+.cert-box h4 {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #fff;
+}
+.cert-box p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: aliceblue;
+}
+.cert-box:hover {
+  box-shadow: 0 4px 8px hwb(175 2% 12% / 0.1);
+  transform: translateY(-2px);
+  transition: transform 0.2s, box-shadow 0.2s;
+}

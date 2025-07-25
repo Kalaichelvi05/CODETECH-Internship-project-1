@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalaichelvi Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div id="navbar"></div>
+
+<script>
+  fetch("nav.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+  <header class="animated">
+    <a href="#home" class="logo">💼- Portfolio</a>
+    <nav class="navbar">
+      
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Project.html">Projects</a>
+      <a href="Service.html">Services</a>
+      <a href="Contact.html">Contact Me</menu></a>
+      
+    </nav>
+  </header>
+
+  <main>
+   
+    <section id="home" class="home animated">
+      <div class="home-detail">
+        <h1>Kalaichelvi Swaminathan</h1><br>
+        <h2>Frontend Developer</h2><br>
+        <p>A front-end developer is a software professional who builds the user-facing part of websites...   A Front‑End Developer designs and builds accessible, responsive, and visually engaging user interfaces using HTML, CSS, and JavaScript. They implement designs into functional layouts, optimize performance, ensure cross-browser compatibility, and collaborate closely with UX/UI designers as well as back-end developers to deliver intuitive web experiences </p>   <br><br>     <div class="home-img">
+        <div class="img-box">
+          <img src="home.jpg" alt="Kalaichelvi">
+        </div>
+        <div class="download-social"><br> <br><br>
+
+          <a href="Resume.pdf" class="btn">Download CV</a><br>
+          <div class="social-icons">
+            <a href="#"><i class="ri-github-line"></i></a> 
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-twitter-x-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+   </section>
+</main>
+</body>
+</html>

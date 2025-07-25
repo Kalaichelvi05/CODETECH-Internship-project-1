@@ -1,0 +1,228 @@
+*html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('images.jpg') no-repeat center center/cover;
+
+}
+body{
+    height: 100vh;
+    background:url("https://img.freepik.com/free-vector/gradient-background-with-bokeh-effect_23-2148365959.jpg") no-repeat center / cover;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body {
+    background:url("https://img.freepik.com/free-vector/gradient-background-with-bokeh-effect_23-2148365959.jpg") no-repeat center / cover;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container{
+    position: relative;
+    height: 100%;
+    background-color: rgba(255,255,255,.1);
+    border: 2px solid rgba(255,255,255,.1);
+    border-radius: 30px;
+    backdrop-filter: blur(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+}
+
+
+@keyframes zoom-in{
+    100%{
+        transform: scale(1);
+    }
+}
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* revert to default on smaller screens */
+  }
+}
+
+header{
+    position: absolute;
+    top : auto;
+    right: 50px;
+    width: 50%;
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 0;
+
+}
+
+.animated{
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slide-in 1s ease forwards;
+    animation-delay: 1s;
+
+}
+@keyframes slide-in{
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.logo {
+  font-size: 20px; /* make emoji bigger */
+  text-decoration: none;
+  color: #0918ec;
+
+}
+
+.navbar a{
+font-size: large;
+    color: rgb(4, 4, 255);
+    text-decoration: none;
+    
+    margin-left: 35px;
+    
+    transition: 5s;
+}
+.navbar a:hover,.navbar a.active{
+    border-color:black;
+    color:blue;
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: black;
+    animation-delay: 1.5s;
+}
+
+.home-detail h1{
+    font-size: 55px;
+    line-height: 1;
+    margin-top: 10px;
+}
+.home-detail h2{
+    font-size: 32px;
+    margin-top: 10px;
+}
+.home-detail p{
+    margin: 10px 0 20px;
+}
+.home-detail .download-social{
+ display: flex;
+ align-items:center;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    box-shadow: 0 0 10px white;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+.btn:hover{
+   background: transparent;
+   box-shadow: none;
+   color: #0918ec;
+}
+.home-detail .social-icons{
+     margin-left: 20px;
+     transform: scale(1);
+
+}
+.home-detail .social-icons a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.home-detail.social-icons a{
+    text-decoration: none;
+    transition: 7s;
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 75%;
+    font-size: 20px;
+    color: black
+   
+}
+.home-detail.social-icons a:hover{
+    background:palevioletred;
+    box-shadow: 0 0 10px orangered;
+    color: blue;
+}
+
+.navbar a {
+  display: inline;
+  color: blue;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #444;
+}
+
+/* Hide all sections by default */
+.page-section {
+  display: none;
+  padding: 40px;
+}
+
+/* Show the section that matches the URL hash */
+.page-section:target {
+  display: block;
+}
+
+/* Show Home by default if no hash is set */
+body:not(:target) #home {
+  display: block;
+
+}
+.header-content.right-header{
+ padding-top: 50px;
+} 
+.btn {
+  margin-top: 20px;
+}
+/* Adds space above all social icon links */
+.social-icons a {
+  display: inline-block;  /* ensures margin is applied */
+  margin-top: 20px;       /* adjust spacing as needed */
+}
+/* Default (unvisited) icon color */
+.social-icons a:link i,
+.social-icons a:visited i {
+  color: black;  /* choose your default color */
+}
+
+/* After the link is visited */
+.social-icons a:visited i {
+  color: blue;  /* change to your “clicked” color */
+}
+
+
+ header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+   
